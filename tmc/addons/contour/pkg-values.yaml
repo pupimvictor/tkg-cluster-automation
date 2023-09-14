@@ -1,12 +1,3 @@
-fullName:
-  clusterName: bridget-tkgm-wkld1
-  managementClusterName: bridget-tkgm
-  name: contour
-  namespaceName: test
-  provisionerName: default
-spec:
-  packageRef:
-    packageMetadataName: contour.tanzu.vmware.com
-    versionSelection:
-      constraints: 1.24.4+vmware.1-tkg.1
-  roleBindingScope: CLUSTER
+envoy:
+  service:
+    type: LoadBalancer
